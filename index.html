@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store - Find Your Perfect Pet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f8a5c2;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1600x800.png?text=Welcome+to+Our+Pet+Store');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #f8a5c2;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e7d;
+        }
+
+        /* Featured Pets Section */
+        .featured-pets {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .featured-pets h3 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .pet-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .pet-card {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .pet-card h4 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .pet-card p {
+            color: #777;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .pet-card a {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .pet-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pet-card a:hover {
+            background-color: #f8a5c2;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f7f7f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h3 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Pet Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets for Sale</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Perfect Pet</h2>
+        <p>Adopt a furry friend today and bring joy to your life!</p>
+        <a href="pets.html" class="cta-button">Browse Pets</a>
+    </section>
+
+    <!-- Featured Pets Section -->
+    <section class="featured-pets">
+        <h3>Featured Pets</h3>
+        <div class="pet-cards">
+            <div class="pet-card">
+                <img src="Golden retriever cute.jpg" alt="Buddy the Dog">
+                <h4>Buddy the Dog</h4>
+                <p>Golden Retriever, 2 years old</p>
+                <a href="pets.html">Learn More</a>
+            </div>
+            <div class="pet-card">
+                <img src="siamese cute.jpg" alt="Whiskers the Cat">
+                <h4>Whiskers the Cat</h4>
+                <p>Siamese, 1 year old</p>
+                <a href="pets.html">Learn More</a>
+            </div>
+            <div class="pet-card">
+                <img src="Rabbit.jpg" alt="Fluffy the Rabbit">
+                <h4>Fluffy the Rabbit</h4>
+                <p>Mini Lop, 6 months old</p>
+                <a href="pets.html">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <h3>About Us</h3>
+        <p>We are a dedicated pet store offering a wide variety of pets for adoption. Our goal is to find loving homes for all our animals. Whether you're looking for a playful puppy, a cuddly kitten, or a friendly rabbit, we have the perfect companion for you!</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pet Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
